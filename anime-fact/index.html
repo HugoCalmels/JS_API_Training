@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      box-sizing: border-box; 
+    }
+    .wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+    .menu{
+      border-bottom: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 1rem;
+
+
+    }
+    #select{
+      border-radius: .3rem;
+      font-size: 2rem;
+      padding: .5rem;
+      background: grey;
+      color: white;
+      /* more in depth relating to select */
+      border: 0;
+      
+    }
+    #select > * {
+      background: grey;
+      color: white;
+    }
+    .menu p{
+      font-size: 2rem;
+      font-weight: 550;
+      margin:1rem;
+      font-family: cursive;
+    }
+    .manga-display{
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 80%;
+    }
+    .manga-header{
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      flex-direction: column;
+    }
+    
+    .manga-facts{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+    }
+    #facts-header{
+      font-family: cursive;
+      font-size: 3rem;
+      margin:1rem;
+      font-weight: 700;
+      text-decoration: underline;
+      text-align: center;
+    }
+    .manga-facts p{
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .fact-details{
+      border-top: 1px solid black;
+    }
+    .result img{
+      object-fit: cover;
+      width: 100%;
+      max-height: 50vh;
+      object-fit: cover;
+      margin-top: 1rem;
+      border-radius: .5rem;
+    }
+
+    
+    
+   
+    
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="menu">
+      <p>Select your favourite manga !</p>
+      <select id="select">
+      </select>
+    </div>
+
+    <div class="result"></div>
+  </div>
+
+  
+
+ 
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
